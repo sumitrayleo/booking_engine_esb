@@ -1,0 +1,52 @@
+{
+	"id": "c505e67d-ad52-0906-17ce-6c29d8cb179d",
+	"name": "Test",
+	"description": "",
+	"order": [
+		"48c9ac03-1c96-e94a-b958-34f950305bbb",
+		"a079362c-3768-5118-7710-02b7d90259e4"
+	],
+	"folders": [],
+	"owner": 0,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "48c9ac03-1c96-e94a-b958-34f950305bbb",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8082/booking-engine-poi/api/info/getAllPointsOfInterest",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474537935276,
+			"name": "Get points of interest",
+			"description": "Get points of interest",
+			"collectionId": "c505e67d-ad52-0906-17ce-6c29d8cb179d",
+			"responses": [],
+			"rawModeData": "{\n\"location\":{\n\"latitude\":50.0,\n\"longitude\":89.5\n\n}\n\n\n\n}"
+		},
+		{
+			"id": "a079362c-3768-5118-7710-02b7d90259e4",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8082/booking-engine-reservation/api/info/getCurrentandFutureReservations",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474537933600,
+			"name": "getCurrentandFutureReservations",
+			"description": "getCurrentandFutureReservations",
+			"collectionId": "c505e67d-ad52-0906-17ce-6c29d8cb179d",
+			"responses": [],
+			"rawModeData": "{\n\n\"memberId\":\"1\",\n\"latitude\":50,\n\"longitude\":89.5\n\n\n}"
+		}
+	]
+}
